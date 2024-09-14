@@ -1,0 +1,43 @@
+Documentation
+
+
+# 1) Data Structures
+I did not use complex data structures but I have the variables
+
+a) minh, maxh, and totalh = stores the minimum, maximum and totalh of the input 
+b) count = keeps track of the data points which will help in finding the avg height
+
+
+# 2) source files:
+
+a)  pointcloud.c
+
+    - stat1():  reads the pointcloud data then finds the min, max and avg height. If scanf() reads 3 values initialize minh, max, totalh with the first height values
+                while --> goes intil it can not scan 3 values, update minh if the new height is largerm also adding the totalh and increment the count.
+
+    - main(): entry point of the program and then it calls main()
+
+    pointcloud.h
+
+    - has the function of stat1() to help link the program 
+
+
+# 3) Functions
+
+    - void stat1(): reads the pointcloud data then finds the min, max and avg height. If scanf() reads 3 values initialize minh, max, totalh with the first height values
+                while --> goes intil it can not scan 3 values, update minh if the new height is largerm also adding the totalh and increment the count.
+    Input: input from a files
+    Output: print the min, max and avg height
+
+    Variables:
+        minh = Tracks the smallest height 
+        maxh = tracks the largest height 
+        totalh = sum of all heights for finding the avg 
+        count = nb of prints processed
+
+    - int main(): calls stat1() to finish the main part of the program and then returns.
+
+    
+
+
+
