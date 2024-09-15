@@ -14,6 +14,9 @@
   a) will create an object pointcloud.o
 # 2) ./state < test.xyz
   a) change test.xyz to test file when needed
+  b) if it does not work, run this command on pyrite
+  # gcc -o stat pointcloud.c
+  
 # 3) see the output 
 
 
