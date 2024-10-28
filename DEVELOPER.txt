@@ -6,8 +6,8 @@ I did not use complex data structures but I have the variables
 
 a) minh, maxh, and totalh = stores the minimum, maximum and totalh of the input 
 b) count = keeps track of the data points which will help in finding the avg height
-
-
+c) amwater= storing the amount of water
+d) n,s,e,w= pointers to the nieghboring points for the simulation
 # 2) source files:
 
 a)  pointcloud.c
@@ -17,9 +17,23 @@ a)  pointcloud.c
 
     - main(): entry point of the program and then it calls main()
 
-    pointcloud.h
+b)    pointcloud.h
 
     - has the function of stat1() to help link the program 
+
+c)  - readpointcloud(): stores each points data in a list
+    - sets up the neighbors to sumulate the wayer flow 
+
+c) imagePointCloud:
+
+creates a bitmap on the height and water data
+converts it to rgb values
+daves it as output.bmp
+
+
+
+b) pointcloud.h
+    - declares stat1 that will allow it to be used across the files
 
 
 # 3) Functions
@@ -38,6 +52,11 @@ a)  pointcloud.c
     - int main(): calls stat1() to finish the main part of the program and then returns.
 
     
+    -void readPointCloudData(FILE *stream, List *list)
+
+    Reads point cloud data from a file and stores it in a list structure.
+    Also sets up neighbor relationships between points.
+
 
 
 

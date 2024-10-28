@@ -69,6 +69,7 @@ void readPointCloudData(FILE *stream, List *list)
     //     pnt.north = pnt.south = pnt.west = pnt.west = NULL;
     //     listAddEnd(list, &pnt);
     // }
+    
     while (!feof(stream) && fscanf(stream, "%lf %lf %lf", &pnt.x, &pnt.y, &pnt.height) == 3)
     {
         printf("Read point: (%f, %f, %f)\n", pnt.x, pnt.y, pnt.height);
